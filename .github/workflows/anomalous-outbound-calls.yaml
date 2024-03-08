@@ -9,7 +9,10 @@ jobs:
       - name: Harden Runner
         uses: step-security/harden-runner@v2
         with:
-          egress-policy: audit
+          egress-policy: block
+          allowed-endpoints: >
+            microsoft.com:443
+            amazon.com:443
       - run: "curl https://pastebin.com -L  || true"
       - run: "curl https://google.com -L  || true"
       - run: "curl microsoft.com:443  --connect-timeout 5 || true"
