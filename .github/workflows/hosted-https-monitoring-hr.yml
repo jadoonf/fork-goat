@@ -6,9 +6,11 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - uses: step-security/harden-runner@v2
+      - name: listen.dev Scan
+        uses: listendev/action@v0.8.0
         with:
-          egress-policy: audit
+          ci: true
+          jwt: ${{ secrets.LSTN_JWT }}
 
       - uses: actions/checkout@v3
 
