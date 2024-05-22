@@ -1,6 +1,9 @@
 name: Anomalous Outbound Calls
 on:
   workflow_dispatch:
+  pull_request:
+    branches:
+      - main
 jobs:
   unexpected-outbound-calls:
     name: AnomalousOutboundCalls

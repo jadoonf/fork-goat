@@ -1,7 +1,9 @@
 name: "ARC: Network Filtering with Harden-Runner"
 on:
   workflow_dispatch:
-
+  pull_request:
+    branches:
+      - main
 jobs:
   build:
     runs-on: self-hosted

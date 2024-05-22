@@ -1,7 +1,9 @@
 name: "ARC: File Monitoring with Harden-Runner"
 on:
   workflow_dispatch:
-
+  pull_request:
+    branches:
+      - main
 jobs:
   arc-solarwinds-simulation:
     runs-on: self-hosted

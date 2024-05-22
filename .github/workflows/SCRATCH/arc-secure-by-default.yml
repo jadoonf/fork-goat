@@ -1,7 +1,9 @@
 name: "ARC: Secure-By-Default Cluster-Level Policy"
 on:
   workflow_dispatch:
-  
+  pull_request:
+    branches:
+      - main
 jobs:
   direct-ip-hosted:
     runs-on: ubuntu-latest
