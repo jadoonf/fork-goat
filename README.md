@@ -3,7 +3,7 @@
 [![Maintained by stepsecurity.io](https://img.shields.io/badge/maintained%20by-stepsecurity.io-blueviolet)](https://stepsecurity.io/?utm_source=github&utm_medium=organic_oss&utm_campaign=harden-runner)
 [![License: Apache 2.0](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://raw.githubusercontent.com/step-security/harden-runner/main/LICENSE)
 
-GitHub Actions Goat by [StepSecurity](https://stepsecurity.io) is an educational project that simulates common security attacks and vulnerabilities in a GitHub Actions CI/CD environment and shows how to defend against such attacks.
+GitHub Actions Goat by [StepSecurity](https://stepsecurity.io) is antest educational project that simulates common security attacks and vulnerabilities in a GitHub Actions CI/CD environment and shows how to defend against such attacks.
 
 The importance of CI/CD Security has been underlined by guidance from the Cybersecurity & Infrastructure Security Agency (CISA) and the National Security Agency (NSA). As per their document [Defending Continuous Integration/Continuous Delivery (CI/CD) Environments](https://media.defense.gov/2023/Jun/28/2003249466/-1/-1/0/CSI_DEFENDING_CI_CD_ENVIRONMENTS.PDF):
 
