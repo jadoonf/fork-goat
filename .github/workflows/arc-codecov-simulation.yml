@@ -8,13 +8,15 @@ jobs:
   build:
     runs-on: self-hosted
     steps:
+
+      - uses: actions/checkout@v3
+
       - name: listen.dev Scan
         uses: listendev/action@v0.8.0
         with:
           ci: true
           jwt: ${{ secrets.LSTN_JWT }}
 
-      - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
         with:
           node-version: 18

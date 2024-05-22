@@ -9,13 +9,14 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+
       - name: listen.dev Scan
         uses: listendev/action@v0.8.0
         with:
           ci: true
           jwt: ${{ secrets.LSTN_JWT }}
 
-      - uses: actions/checkout@v3
 
       - uses: JasonEtco/create-an-issue@v2
         env:

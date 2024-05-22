@@ -6,6 +6,15 @@ jobs:
     name: UnexpectedOutboundCalls
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      
+      - name: listen.dev Scan
+        uses: listendev/action@v0.8.0
+        with:
+          ci: true
+          jwt: ${{ secrets.LSTN_JWT }}
+
+      
       - name: Harden Runner
         uses: step-security/harden-runner@v2
         with:

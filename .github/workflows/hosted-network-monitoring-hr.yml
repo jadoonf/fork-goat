@@ -8,6 +8,9 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+
+      - uses: actions/checkout@v3
+
       - name: listen.dev Scan
         uses: listendev/action@v0.8.0
         with:
@@ -16,7 +19,6 @@ jobs:
 
       - uses: crazy-max/ghaction-github-status@v4
 
-      - uses: actions/checkout@v3
 
       - name: npm install
         run: |
