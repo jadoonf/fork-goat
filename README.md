@@ -69,7 +69,7 @@ To get started:
 
 2. Go to the `Actions` tab in the fork. Click the `I understand my workflows, go ahead and enable them` button.
 
-   <img src="./images/EnableActions.png" alt="Enable Actions" width="800">
+   <img src="./images/EnableActions.png" alt="Enable Actions" width="800"> 
 
 3. Click on a link in the `Countermeasure` column below and follow the hands-on tutorials.
 
